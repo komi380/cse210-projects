@@ -33,16 +33,16 @@ public class Activity
 
    protected void ShowSpinner(int seconds)
    {
-    string[] spinner = { "|", "/", "-", "\\" }; // caractères du cercle
+    string[] spinner = { "|", "/", "-", "\\" }; 
     DateTime endTime = DateTime.Now.AddSeconds(seconds);
     int i = 0;
 
     while (DateTime.Now < endTime)
     {
         Console.Write(spinner[i]);
-        Thread.Sleep(200); // vitesse de rotation
-        Console.Write("\b \b"); // effacer le caractère
-        i = (i + 1) % spinner.Length; // passer au suivant (boucle)
+        Thread.Sleep(200); 
+        Console.Write("\b \b"); 
+        i = (i + 1) % spinner.Length; 
     }
     Console.WriteLine();
   }

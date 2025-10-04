@@ -16,7 +16,7 @@ class Program
          string choice = "";
         while (choice != "5")
         {
-            Console.Clear(); // Efface l’écran avant d’afficher le menu
+            Console.Clear(); 
 
             Console.WriteLine("\n=== Mindfulness Program Menu ===");
             Console.WriteLine("1. Breathing Activity");
